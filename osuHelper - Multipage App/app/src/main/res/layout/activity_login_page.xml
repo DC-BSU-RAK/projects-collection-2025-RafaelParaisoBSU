@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#473A3F"
+    tools:context=".LoginPageAct">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/loginpage" />
+
+    <TextView
+        android:id="@+id/footerText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/quicksand"
+        android:text="Unofficial helper app. osu! © ppy Pty Ltd.  "
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
+        tools:text="Unofficial helper app. osu! © ppy Pty Ltd.  " />
+
+    <TextView
+        android:id="@+id/signintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/quicksand"
+        android:text="Sign In to Proceed"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443"
+        tools:text="Sign in to Proceed" />
+
+    <EditText
+        android:id="@+id/userField"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:background="#8BCED5"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/quicksand"
+        android:inputType="text"
+        android:text="Username"
+        android:textColor="#000000"
+        app:circularflow_defaultRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signintext"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="84dp"
+        android:background="#8BCED5"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/quicksand"
+        android:inputType="text"
+        android:text="E-mail"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signintext"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <EditText
+        android:id="@+id/passField"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="84dp"
+        android:background="#8BCED5"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/quicksand"
+        android:inputType="text"
+        android:text="Password"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signintext"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <ImageButton
+        android:id="@+id/signinButton"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailField"
+        app:layout_constraintVertical_bias="0.365"
+        app:srcCompat="@drawable/helper" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

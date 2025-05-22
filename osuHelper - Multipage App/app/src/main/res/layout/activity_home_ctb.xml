@@ -1,0 +1,270 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#473A3F"
+    tools:context=".homeCTB">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bg" />
+
+    <View
+        android:id="@+id/hometextbg"
+        android:layout_width="71dp"
+        android:layout_height="38dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#6FBB3A73"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <View
+        android:id="@+id/selectedMode"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#6FBB3A73"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/homeLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/quicksand"
+        android:text="home"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119"
+        tools:text="home" />
+
+    <TextView
+        android:id="@+id/gamemodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/quicksand"
+        android:text="gamemodes"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172"
+        tools:text="gamemodes" />
+
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/quicksand"
+        android:text="Unofficial helper app. osu! © ppy Pty Ltd.  "
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
+        tools:text="Unofficial helper app. osu! © ppy Pty Ltd.  " />
+
+    <TextView
+        android:id="@+id/aboutLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:clickable="true"
+        android:fontFamily="@font/quicksand"
+        android:text="about"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/homeLink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119"
+        tools:text="about" />
+
+    <ImageButton
+        android:id="@+id/standardButton"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/gamemodeText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/standard" />
+
+    <ImageButton
+        android:id="@+id/maniaButton"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toEndOf="@+id/gamemodeText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/mania" />
+
+    <ImageButton
+        android:id="@+id/ctbButton"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toEndOf="@+id/gamemodeText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/ctb" />
+
+    <ImageButton
+        android:id="@+id/taikoButton"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toEndOf="@+id/gamemodeText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/taiko" />
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/prof" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="465dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.669">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/link1"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_margin="1dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ctb1" />
+
+            <ImageButton
+                android:id="@+id/link2"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_margin="1dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ctb2" />
+
+            <ImageButton
+                android:id="@+id/link3"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_margin="1dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ctb3" />
+
+            <ImageButton
+                android:id="@+id/link4"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_margin="1dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ctb4" />
+
+            <ImageButton
+                android:id="@+id/link5"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_margin="1dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ctb5" />
+
+            <ImageButton
+                android:id="@+id/link6"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_margin="1dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ctb6" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
